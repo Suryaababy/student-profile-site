@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dark {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #4a90e2;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  input[type="file"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #357ab7;
+  }
+  
+  .profile-card {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px dashed #4a90e2;
+    border-radius: 10px;
+    text-align: center;
+    animation: popin 0.5s ease-out;
+    background-color: #e9f4ff;
+  }
+  
+  .profile-card img {
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    max-width: 150px;
+    height: auto;
+  }
+  
+  #pdfBtn, #whatsappBtn, #themeToggle {
+    display: block;
+    margin: 15px auto;
+    max-width: 250px;
+    width: 100%;
+  }
+  
+  @keyframes popin {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .dark .container,
+  .dark .profile-card {
+    background-color: #2b2b2b;
+    color: #f4f4f4;
+    border-color: #66b2ff;
+  }
